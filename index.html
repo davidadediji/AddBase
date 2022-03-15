@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="/img/apple-touch-icon.png">
     <script src="https://kit.fontawesome.com/bb98dc3c9d.js" crossorigin="anonymous"></script>
     <style>
       *{
@@ -13,13 +14,15 @@
         box-sizing: border-box;
       }
       body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 14px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        color: #222222;
       }
       img {
         border-radius: 50%;
         margin-right: 35px;
         float:left;
+        object-fit: cover;  /*property allows you to get the same */
       }
       .username {
         font-weight: bold;
@@ -31,24 +34,51 @@
         margin-top: 300px;
         
       }
+      .small-font{
+        font-size: 10px;
+        font-weight: lighter;
+        margin-top:auto;
+      }
+      i{
+        margin-right: 23px;
+        margin-top:23px;
+      }
+      a{
+        color:#222222;
+        text-decoration: none;
+      }
     </style>
   </head>
-  <body class = "center">
+  <body>
+      <header>
+        <a href="index.html"><span class="logo__mark">></span>
+        <span class="logo__text">$ cd /home/</span>
+        <span class="logo__cursor" blink=""></span></a>
+      </header>
+    <nav>
+      <ul>
+        <a href="about.html"><li>About</li></a>
+        <a href="post.html"><li>Post</li></a>
+      </ul>
+    </nav>
+  <section class = "center">
     <div>
       <img
       src="./img/download.png"
-      alt="profile image"
-      height="120px"
-      width="120px"
+      alt="A profile image of David Adediji"
+      height="120"
+      width="120"
     />
-    <p class="username">@davidadediji1</p>
+    <h2>David Adediji</h2>
+    <p class="username"><span class="small-font">@davidadediji1</span></p>
     <p>Software Engineer</p>
-    <i class="fa-brands fa-github"></i>
-    
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-brands fa-twitter-square"></i>
-    <i class="fa-brands fa-instagram-square"></i>
+    <a href="https://github.com/davidadediji"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/davidadediji1/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://twitter.com/davidadediji1"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/david_adediji/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto:davidadediji@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
     </div>
 
-  </body>
+  </section>
+</body>
 </html>
