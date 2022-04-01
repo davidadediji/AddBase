@@ -32,3 +32,18 @@ Entities allows us to add special characters to
 
 Links 
 
+
+audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+audio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
