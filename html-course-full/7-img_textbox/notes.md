@@ -16,3 +16,9 @@ the div element is also a block element. A div can contain other elements inside
 
 This containers allows user to group containers together and lay them out
 
+
+
+Block element take up te entire line in their container. The container can be a div with a set width and height.
+
+
+vertical align: top
