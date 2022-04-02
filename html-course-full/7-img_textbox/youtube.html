@@ -8,15 +8,30 @@
 	<style>
 		.thumbnail{
 			width: 300px;
+			display: block;
 		}
 		.search-bar{
 			font-size: 20px;
-			margin-left: 12px;
+			margin-left: 1px;
+		}
+		.div-example{
+			display: inline-block;
 		}
 	</style>
 </head>
 <body>
-	<img class="thumbnail" src="./thumbnails/thumbnail-1.webp" alt="thumbnail-1">
 	<input class=search-bar type="text" placeholder="Search">
+	<div class="video-preview">
+		<img class="thumbnail" src="./thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+		<p class="video-title">
+			Talking Tech and AI with Google CEO Sundar Pichai
+		</p>
+		<p class="video-author">
+			Marques Brownlee
+		</p>
+		<p class="video-stats">
+			3.4M views - 6 months ago
+		</p>
+	</div>
 </body>
 </html>
