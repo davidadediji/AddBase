@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grid Practice</title>
+	<style>
+		.wrapper1{
+			display: grid;
+			grid-template-columns: 200px 75px;
+			margin-bottom: 40px;
+		}
+		.grid-column1{
+			background-color: aliceblue;
+		}
+		.grid-column2{
+			background-color: lightpink;
+		}
+
+		.wrapper2{
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			height:50px;
+		}
+
+		.grid-column1a{
+			background-color: lightblue;
+		}
+		.grid-column2a{
+			background-color: lightpink;
+		}
+		.grid-column3a{
+			background-color: lightblue;
+		}
+
+		.wrapper3{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			margin-top: 40px;
+			row-gap: 20px;
+			column-gap: 20px;
+		}
+		.grid-column1b{
+			background-color: lightpink;
+		}
+		.grid-column2b{
+			background-color: lightpink;
+		}
+		.grid-column3b{
+			background-color: lightpink;
+		}
+		.grid-column4b{
+			background-color: lightpink;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper1">
+		<div class="grid-column1">200px</div>
+		<div class="grid-column2">75px</div>
+	</div>
+
+	<div class="wrapper2">
+		<div class="grid-column1a">col1</div>
+		<div class="grid-column2a">col2</div>
+		<div class="grid-column3a">col3</div>
+	</div>
+
+	<div class="wrapper3">
+		<div class="grid-column1b">col1</div>
+		<div class="grid-column2b">col2</div>
+		<div class="grid-column3b">col3</div>
+		<div class="grid-column4b">col4</div>
+		<div class="grid-column1b">col1</div>
+		<div class="grid-column2b">col2</div>
+		<div class="grid-column3b">col3</div>
+		<div class="grid-column4b">col4</div>
+	</div>
+</body>
+</html>
