@@ -4,143 +4,211 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CSS Grid Practice</title>
+	<title>CSS Grid</title>
 	<style>
-		.wrapper1{
+
+		.container-demo{
 			display: grid;
 			grid-template-columns: 200px 75px;
 			margin-bottom: 40px;
 		}
-		.grid-column1{
-			background-color: aliceblue;
+		.container-column1{
+			background-color: lightblue;
 		}
-		.grid-column2{
+		.container-column2{
 			background-color: lightpink;
 		}
 
-		.wrapper2{
+		.grid-group{
 			display: grid;
 			grid-template-columns: 1fr 2fr 1fr;
-			height:50px;
+			margin-bottom: 45px;
 		}
 
-		.grid-column1a{
+		.grid-group-column1{
 			background-color: lightblue;
 		}
-		.grid-column2a{
+		.grid-group-column2{
 			background-color: lightpink;
 		}
-		.grid-column3a{
+		.grid-group-column3{
 			background-color: lightblue;
 		}
 
-		.wrapper3{
+		.wrapper-class{
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
-			margin-top: 40px;
-			row-gap: 20px;
 			column-gap: 20px;
+			row-gap: 20px;
+			margin-bottom: 45px;
 		}
-		.grid-column1b{
+		.wrapper-class-column1{
 			background-color: lightpink;
 		}
-		.grid-column2b{
+		.wrapper-class-column2{
 			background-color: lightpink;
 		}
-		.grid-column3b{
+		.wrapper-class-column3{
 			background-color: lightpink;
 		}
-		.grid-column4b{
+		.wrapper-class-column4{
 			background-color: lightpink;
+		}
+
+
+		*{
+			padding:0;
+			margin:0;
+		}
+		p{
+			font-family: Roboto, Arial;
+		}
+		.page-container{
+			margin-left:15px;
+			margin-top: 10px;
+		}
+		.cat-grid{
+			display: grid;
+			grid-template-columns: 190px 195px 195px;
+			column-gap:20px;
 		}
 
 		.container{
-			margin-top: 100px;
-			display: grid;
-			grid-template-columns: 200px 200px 200px;
-			column-gap: 20px;
+			box-shadow: 3px 3px 3px 3px rgba(96, 96, 96, 0.2);
+			border-width: 0.08px;
+			border-color: rgb(96, 96, 96);
+			border-style:solid;
 		}
-
-		.photo-preview{
-			background-color: azure;
-			height:350px;
-			align-items: center;
-			border: 2px solid black;
-		}
-		.photo-preview img{
+		.cat-photo{
 			width: 100%;
 		}
-		.photo-info{
+
+		.profile{
 			display: grid;
-			grid-template-columns: 1fr 2fr;
+			grid-template-columns: 30px 1fr;
+			column-gap: 10px;
+			align-items: center;
+		}
+		.profile-dog{
+			width:100%;
+			height: 30px;
+			border-radius: 50%;
+		}
+		.mutual-friend{
+			color:rgb(96, 96, 96);
+			font-weight: 0;
+			font-size: 14px;
+		}
+		.profile-preview{
+			margin-left: 10px;
 		}
 		.name{
-			font-family: Arial, Helvetica, sans-serif;
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 20px;
-			padding-left:10px;
+			margin-bottom: 4px;
 		}
-		.photo-info-row{
-			display: grid;
-			grid-template-columns: 35px 1fr;
-			column-gap: 10px;
+		.btn{
+			padding-top:10px;
+			padding-bottom: 10px;
+			padding-right:15px;
+			padding-left: 15px;
+			border:none;
+			background-color: rgb(57, 93, 224);
+			color:#fff;
+			border-radius: 5px;
+			font-size: 15px;
+			margin-bottom: 5px;
+			cursor:pointer;
 		}
-		.dog-profile{
-			width: 1px;
-		}
-
 	</style>
 </head>
 <body>
-	<div class="wrapper1">
-		<div class="grid-column1">200px</div>
-		<div class="grid-column2">75px</div>
-	</div>
-
-	<div class="wrapper2">
-		<div class="grid-column1a">col1</div>
-		<div class="grid-column2a">col2</div>
-		<div class="grid-column3a">col3</div>
-	</div>
-
-	<div class="wrapper3">
-		<div class="grid-column1b">col1</div>
-		<div class="grid-column2b">col2</div>
-		<div class="grid-column3b">col3</div>
-		<div class="grid-column4b">col4</div>
-		<div class="grid-column1b">col1</div>
-		<div class="grid-column2b">col2</div>
-		<div class="grid-column3b">col3</div>
-		<div class="grid-column4b">col4</div>
-	</div>
-
-	<div class="container">
-		<div class="photo-preview">
-			<img src="./img/01.jpg" alt="cat1">
-			<p class="name">Oliver</p>
-			<div class="photo-info-row">
-				<img class="dog-profile" src="./img/dog2.jpg" alt="">
-				<p class="pir-text">2 mutual friends</p>
-			</div>
-			<button class="add-friend">Add Button</button>
+	<div class="page-container">
+		<div class="container-demo">
+			<div class="container-column1">200px</div>
+			<div class="container-column2">75</div>
 		</div>
-		<div class="photo-preview">
-			<img src="./img/02.jpeg" alt="cat1">
-			<p class="name">Mimi</p>
-			<div class="photo-info-row">
-				<img class="dog-profile" src="./img/dog2.jpg" alt="">
-				<p class="pir-text">3 mutual friends</p>
-			</div>
-			<button class="add-friend">Add Button</button>
+		<div class="grid-group">
+			<div class="grid-group-column1">col1</div>
+			<div class="grid-group-column2">col2</div>
+			<div class="grid-group-column3">col3</div>
 		</div>
-		<div class="photo-preview">
-			<img src="./img/03.jpeg" alt="cat1">
-			<p class="name">Rex</p>
-			<div class="photo-info-row">
-				<img class="dog-profile" src="./img/dog2.jpg" alt="">
-				<p class="pir-text">4 mutual friends</p>
+
+		<div class="wrapper-class">
+			<div class="wrapper-class-column1">col1</div>
+			<div class="wrapper-class-column2">col2</div>
+			<div class="wrapper-class-column3">col3</div>
+			<div class="wrapper-class-column4">col4</div>
+			<div class="wrapper-class-column1">col1</div>
+			<div class="wrapper-class-column2">col2</div>
+			<div class="wrapper-class-column3">col3</div>
+			<div class="wrapper-class-column4">col4</div>
+		</div>
+
+		<div class="cat-grid">
+			<div class="container">
+				<div>
+					<img class="cat-photo" src="./cat.jpg" alt="cat 1">
+				</div>
+				<div class="profile-preview">
+					<div>
+						<p class="name">Oliver</p>
+					</div>
+					<div class="profile">
+						<div class="profile-section">
+							<img class="profile-dog" src="./dog2.jpg" alt="dog-profile">
+						</div>
+						<div class="mutual-friend">
+							<p>2 mutual friends</p>
+						</div>
+					</div>
+					<div>
+						<button class="btn">Add Friend</button>
+					</div>
+				</div>
 			</div>
-			<button class="add-friend">Add Button</button>
+			<div class="container">
+				<div>
+					<img class="cat-photo" src="./cat2.jpg" alt="cat 1">
+				</div>
+				<div class="profile-preview">
+					<div>
+						<p class="name">Mimi</p>
+					</div>
+					<div class="profile">
+						<div class="profile-section">
+							<img class="profile-dog" src="./dog2.jpg" alt="dog-profile">
+						</div>
+						<div class="mutual-friend">
+							<p>2 mutual friends</p>
+						</div>
+					</div>
+					<div>
+						<button class="btn">Add Friend</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div>
+					<img class="cat-photo" src="./dog.jpg" alt="cat 1">
+				</div>
+				<div class="profile-preview">
+					<div>
+						<p class="name">Rex</p>
+					</div>
+					<div class="profile">
+						<div class="profile-section">
+							<img class="profile-dog" src="./dog2.jpg" alt="dog-profile">
+						</div>
+						<div class="mutual-friend">
+							<p>2 mutual friends</p>
+						</div>
+					</div>
+					<div>
+						<button class="btn">Add Friend</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
