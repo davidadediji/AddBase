@@ -54,6 +54,41 @@
 			background-color: lightpink;
 		}
 
+		.container{
+			margin-top: 100px;
+			display: grid;
+			grid-template-columns: 200px 200px 200px;
+			column-gap: 20px;
+		}
+
+		.photo-preview{
+			background-color: azure;
+			height:350px;
+			align-items: center;
+			border: 2px solid black;
+		}
+		.photo-preview img{
+			width: 100%;
+		}
+		.photo-info{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+		}
+		.name{
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			padding-left:10px;
+		}
+		.photo-info-row{
+			display: grid;
+			grid-template-columns: 35px 1fr;
+			column-gap: 10px;
+		}
+		.dog-profile{
+			width: 1px;
+		}
+
 	</style>
 </head>
 <body>
@@ -77,6 +112,36 @@
 		<div class="grid-column2b">col2</div>
 		<div class="grid-column3b">col3</div>
 		<div class="grid-column4b">col4</div>
+	</div>
+
+	<div class="container">
+		<div class="photo-preview">
+			<img src="./img/01.jpg" alt="cat1">
+			<p class="name">Oliver</p>
+			<div class="photo-info-row">
+				<img class="dog-profile" src="./img/dog2.jpg" alt="">
+				<p class="pir-text">2 mutual friends</p>
+			</div>
+			<button class="add-friend">Add Button</button>
+		</div>
+		<div class="photo-preview">
+			<img src="./img/02.jpeg" alt="cat1">
+			<p class="name">Mimi</p>
+			<div class="photo-info-row">
+				<img class="dog-profile" src="./img/dog2.jpg" alt="">
+				<p class="pir-text">3 mutual friends</p>
+			</div>
+			<button class="add-friend">Add Button</button>
+		</div>
+		<div class="photo-preview">
+			<img src="./img/03.jpeg" alt="cat1">
+			<p class="name">Rex</p>
+			<div class="photo-info-row">
+				<img class="dog-profile" src="./img/dog2.jpg" alt="">
+				<p class="pir-text">4 mutual friends</p>
+			</div>
+			<button class="add-friend">Add Button</button>
+		</div>
 	</div>
 </body>
 </html>
