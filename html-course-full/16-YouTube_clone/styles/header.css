@@ -63,14 +63,14 @@
 	position: relative;
 }
 
-.search-bar, .voice-search-icon, .upload-icon-container{
+.search-bar, .voice-search-icon, .upload-icon-container, .apps-icon-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 
-.search-button .tooltip, .voice-search-icon .tooltip, .upload-icon-container .tooltip{
+.search-button .tooltip, .voice-search-icon .tooltip, .upload-icon-container .tooltip, .apps-icon-container .tooltip{
 	position: absolute;
 	font-family: Roboto, Arial;
 	background-color: gray;
@@ -88,7 +88,7 @@
 	white-space:nowrap;
 }
 
-.search-button:hover .tooltip, .voice-search-icon:hover .tooltip, .upload-icon-container:hover .tooltip{
+.search-button:hover .tooltip, .voice-search-icon:hover .tooltip, .upload-icon-container:hover .tooltip, .apps-icon-container:hover .tooltip, .notifications-icons-3 .tooltip{
 	opacity: 1;
 }
 
@@ -150,6 +150,7 @@
 
 .notifications-icon-container{
 	position: relative;
+	margin-top: 2px;
 }
 
 .notifications-count{
