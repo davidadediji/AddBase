@@ -41,6 +41,21 @@ body{
   height: 150px;
 }
 
+#display > div{
+  text-align: right;
+  padding-right: 45px;
+  padding-top:50px;
+}
+
+.calculate{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.result{
+  color:#A99855;
+  font-size: 30px;
+  width: 100%;
+}
 .buttons{
   background-color: #0D0831;
   display: grid;
@@ -52,4 +67,9 @@ body{
   font-size: 28px;
   text-align: center;
   cursor: pointer;
+}
+
+.button:active{
+  color: aqua;
+  transition: 1ms color;
 }

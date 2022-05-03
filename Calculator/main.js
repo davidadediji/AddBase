@@ -8,7 +8,7 @@ buttons.forEach((button) => {
     if (e.target.innerText === "C") {
       display.innerText = result.innerText = "";
     } else if (e.target.innerText === "←") {
-      display.innerText = result.innerText = display.innerText.slice(0, -1);
+      display.innerText = display.innerText.slice(0, -1);
     } else if (e.target.innerText === "=") {
       try {
         result.innerText = eval(display.innerText);
