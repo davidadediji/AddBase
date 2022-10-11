@@ -1,20 +1,12 @@
 const express = require('express');
-const validator = require('./service/validator')
-const myRoute = require('./Routes/route')
-
 const app = express();
 
-app.use('/api/v1', myRoute)
-app.get(
-	'/',validator
-	,
-	(req, res, next) => {
-		res.send('second middleware');
-	}
-);
 
-app.listen(3000, () => {
-	console.log('app has started');
-});
+app.get('/', (req, res)=>{
+    res.send('hello David')
+})
 
-//Middlewares: more research
+
+app.listen(3001, ()=>{
+    console.log('application running on 3001');
+})
