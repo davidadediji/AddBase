@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Text, VStack } from '@chakra-ui/react';
+import { Box, Center, Flex, Text } from '@chakra-ui/react';
 
 function App() {
 	return (
