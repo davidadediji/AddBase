@@ -1,6 +1,6 @@
 // const chalk = require('chalk');
 
-const ProgressBar = require('progress')
+import ProgressBar from 'progress';
 
 const bar = new ProgressBar(':bar', {total:5})
 
