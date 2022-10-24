@@ -19,5 +19,6 @@ app.use(
 app.use(express.json())
 
 app.post('/todos', (req, res)=>{
+	res.send('ready')
     console.log(req.body.todo)
 })
