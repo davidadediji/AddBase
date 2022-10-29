@@ -1,13 +1,38 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const mysql = require('mysql2');
 
 const app = express();
 dotenv.config()
 
+
+// const database = mysql.createConnection('mysql://root:password@localhost:3306/dbMovieReviews')
+
+var db = mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"password",
+    database:"dbMovieReviews"
+})
+
+db.connect((err, result)=>{
+    if(err){
+        throw err.sqlMessage
+    }else{
+        console.log('successful connection');
+    }
+})
+
 const port = process.env.PORT || 4015;
 
 app.get('/', (req, res)=>{
-    res.end('Hello David')
+    const mysqlStatement = "INSERT INTO movie_reviews (movie_name, movie_review) VALUES ('inception', 'intriguing')";
+    db.query(mysqlStatement, (err, result)=>{
+        res.end('hello world')
+        if (err){
+            console.log(err.name, err.message)
+        }
+    });
 })
 
 
