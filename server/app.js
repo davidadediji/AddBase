@@ -6,14 +6,12 @@ const app = express();
 dotenv.config()
 
 
-// const database = mysql.createConnection('mysql://root:password@localhost:3306/dbMovieReviews')
-
 var db = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"password",
     database:"dbMovieReviews"
-})
+})  
 
 db.connect((err, result)=>{
     if(err){
@@ -34,9 +32,6 @@ app.get('/', (req, res)=>{
         }
     });
 })
-
-
-
 
 app.listen(port, ()=>{
     console.log(`listening at port ${port}`)
