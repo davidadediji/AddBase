@@ -6,7 +6,7 @@ const app = express();
 dotenv.config()
 
 
-var db = mysql.createConnection({
+const db = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"password",
@@ -15,7 +15,7 @@ var db = mysql.createConnection({
 
 db.connect((err, result)=>{
     if(err){
-        throw err.sqlMessage
+        console.log('no connection')
     }else{
         console.log('successful connection');
     }
