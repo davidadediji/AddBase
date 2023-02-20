@@ -4,7 +4,8 @@
   "description": "An api for movie reviews",
   "main": "index.ts",
   "scripts": {
-    "test": "npm run dev"
+    "test": "npm run dev",
+    "dev":"npx nodemon ./index.ts"
   },
   "keywords": [
     "reviews",
