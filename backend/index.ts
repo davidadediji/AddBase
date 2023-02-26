@@ -13,6 +13,7 @@ const client = new MongoClient(mongoClient);
 async function main() {
 	try {
 		await client.connect();
+		await MoviesDAO.injectDB({ conn: client });
 		app.listen(port, () => {
 			console.log('server is running on port:' + port);
 		});

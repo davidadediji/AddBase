@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run dev",
     "dev":"npx nodemon ./index.ts",
-    "build":"tsc"
+    "build":"tsc",
+    "start": "node ./build/index.js"
   },
   "keywords": [
     "reviews",

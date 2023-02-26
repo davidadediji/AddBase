@@ -4,7 +4,7 @@ const reviews = process.env.MOVIE_REVIEWS;
 
 export default class MoviesDAO {
 
-	static async injectDB(conn:any) {
+	static async injectDB(conn:any): Promise<void> {
 		if (movies) {
 			return;
 		}
@@ -19,7 +19,7 @@ export default class MoviesDAO {
 		filters = null,
 		page = 0,
 		moviesPerPage = 20,
-	} = {}) {
+	} = {}): Promise<{ moviesList: any; totalNumMovies: number; }> {
 		let query;
 		if (filters) {
 			if ('title' in filters) {
