@@ -1,0 +1,14 @@
+{
+  "name": "contests",
+  "version": "1.0.0",
+  "description": "A repository to display naming contests",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Adediji",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
