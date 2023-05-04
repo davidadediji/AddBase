@@ -1,4 +1,6 @@
 import express from 'express';
+import os from 'node:os'
+import { HOST, PORT } from './config';
 
 const server = express();
 
@@ -11,6 +13,6 @@ server.use('/', (req, res)=>{
     })
 })
 
-server.listen('8081', '0.0.0.0', () => {
-	console.info('Express server listening at http://0.0.0.0:8081');
+server.listen(PORT, HOST, () => {
+	console.info(`Express server listening at http://0.0.0.0:8081. free memory is ${os.freemem()/1024}`);
 });
