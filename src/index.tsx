@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 const App = () => {
-	return <h1>A </h1>;
+	return <h1>David Adediji</h1>;
 };
 
 const container = document.getElementById('app');

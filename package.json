@@ -5,7 +5,7 @@
 	"main": "index.ts",
 	"scripts": {
 		"dev:server": "tsnd src/server/server.ts",
-		"dev:client": "webpack -w"
+		"dev:bundler": "webpack -w --mode=development"
 	},
 	"author": "David Adediji",
 	"license": "MIT",
